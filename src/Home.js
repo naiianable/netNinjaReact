@@ -1,11 +1,10 @@
-// import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
 import useFetch from './useFetch';
 
 const Home = () => {
 
         //naming the data "blogs" inside this component so "blogs" can be used in return
-    const { data: blogs, isPending, error } = useFetch('http:localhost:8000/blogs');
+    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 
     return ( 
         <div className="home">
